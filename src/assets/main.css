@@ -4,7 +4,7 @@
 #app {
   max-width: 480px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0.5rem;
   font-weight: normal;
   display: grid;
   place-items: center;
@@ -19,6 +19,15 @@ p, ul, h1, h2, h3 {
 }
 h1, h2, h3 {
   color: var(--c-t-dark-headline)
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3, .enlarged {
+  font-size: 1.1em;
 }
 a {
   text-decoration: none;
@@ -38,6 +47,14 @@ a {
     place-items: center;
   }
 }
+@media (max-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+  p, ul, h2, h3 {
+    margin-bottom: 0.7rem;
+  }
+}
 
 .position--bottom-right {
   position: absolute;
@@ -49,5 +66,17 @@ a {
   position: absolute;
   bottom: var(--s-medium);
   left: var(--s-medium)
+}
+.text-block {
+  padding: 0.5rem;
+}
+.delimiter {
+  background: var(--c-black-mute);
+  margin: 0.7rem;
+  height: 2px;
+}
+
+ul {
+  padding-left: 1.5rem
 }
 
