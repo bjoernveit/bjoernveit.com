@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import FlippableCard from "./components/FlippableCard.vue";
 import Polaroid from "./components/PolaroidImg.vue";
-import Contact, { ContactItem } from "@/components/ContactIcons.vue";
+import Contact from "@/components/ContactIcons.vue";
+import type { ContactItem } from "@/components/ContactIcons.vue";
 
 const contactMsg = "Feel free to get in contact via:";
 const contactItems: Array<ContactItem> = [
