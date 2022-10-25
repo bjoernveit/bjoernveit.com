@@ -33,13 +33,11 @@ defineExpose({
   <main>
     <FlippableCard>
       <template #front>
-        <div class="card card--front">
-          <Polaroid alt="Portrait Björn Veit" imgSrc="/portrait.jfif">
-            <h1 class="content__headline">Björn Veit</h1>
-            <div class="delimiter"></div>
-            <h2 class="content__subline">Full Stack Software Developer</h2>
-          </Polaroid>
-        </div>
+        <Polaroid alt="Portrait Björn Veit" imgSrc="/portrait.jfif">
+          <h1 class="content__headline">Björn Veit</h1>
+          <div class="delimiter"></div>
+          <h2 class="content__subline">Full Stack Software Developer</h2>
+        </Polaroid>
       </template>
       <template #back>
         <div class="card card--back">

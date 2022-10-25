@@ -18,6 +18,7 @@ defineProps<{
 
 <style scoped>
 .polaroid {
+  max-width: 400px;
 }
 .polaroid__img-container {
   display: flex;
