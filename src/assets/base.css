@@ -8,14 +8,36 @@
   --c-black-soft: #222222;
   --c-black-mute: #282828;
 
+  --c-dark-green: #252d21;
+  --c-darker-green: #1e211d;
+
   --c-primary: #3f692d;
   --c-accent: hsla(160, 100%, 37%, 0.2);
 
-  --c-t-dark: #252d21;
-  --c-t-dark-headline: #1e211d;
-
   --r-medium: 0.3rem;
-  --s-medium: 0.5rem;
+
+  --s-xsmall: 0.5rem;
+  --s-small: 0.7rem;
+  --s-medium: 1rem;
+  --s-large: 1.5rem;
+  --s-xlarge: 2rem;
+
+  --f-default: 18px;
+  --f-mobile: 16px;
+  --f-enlarged: 1.1rem;
+  --f-big: 1.2rem;
+  --f-headline: 2rem;
+}
+
+:root {
+  --c-text: var(--c-dark-green);
+  --c-text-headline: var(--c-darker-green);
+  --c-text-highlight: var(--c-primary);
+  --c-background-dark: var(--c-darker-green);
+  --c-background-light: var(--c-white-warm);
+
+  --shadow-medium: 2px 2px 5px -2px var(--c-black-mute);
+  --shadow-inset: 0 0 1rem -0.2rem var(--c-black-mute) inset;
 }
 
 *,
@@ -29,13 +51,13 @@
 
 body {
   min-height: 100vh;
-  color: var(--c-t-dark);
-  background: var(--c-white-warm);
+  color: var(--c-text);
+  background: var(--c-background-dark);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family:'Autour One', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-size: var(--f-default);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

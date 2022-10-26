@@ -24,8 +24,8 @@ defineProps<{
   display: flex;
   border-radius: var(--r-medium);
   overflow: hidden;
-  box-shadow: 0 0 1rem -0.2rem var(--c-black-mute) inset;
-  margin-bottom: 1rem;
+  box-shadow: var(--shadow-inset);
+  margin-bottom: var(--s-medium);
 }
 .polaroid__img {
   z-index: -1;

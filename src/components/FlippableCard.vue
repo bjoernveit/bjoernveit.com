@@ -52,10 +52,10 @@ defineExpose({ showFront, toggle });
   backface-visibility: hidden;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  background: var(--c-white);
-  box-shadow: 2px 2px 5px -2px var(--c-black-mute);
+  background: var(--c-background-light);
+  box-shadow:  var(--shadow-medium);
   border-radius: var(--r-medium);
   overflow: hidden;
-  padding: 0.5rem 0.5rem calc(0.5rem + 24px);
+  padding: var(--s-xsmall) var(--s-xsmall) calc(var(--s-xsmall) + 24px);
 }
 </style>

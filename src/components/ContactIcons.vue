@@ -39,7 +39,7 @@ export default {
 }
 .contact__item {
   width: 3rem;
-  margin: 0.5rem 1rem;
+  margin: var(--s-xsmall) var(--s-medium);
 }
 .contact__item:hover img {
   transform: scale(1.2);
